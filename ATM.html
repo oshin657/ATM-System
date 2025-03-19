@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="atm-container">
+      <img
+        src="3049A98A-15C0-4DE4-83F0-DDC4E17D40A2.jpeg"
+        alt="Bank Logo"
+        class="bank-logo"
+      />
+      <h2>ATM System</h2>
+
+      <div id="login-screen">
+        <h6 id="hint">Password hint: 1234</h6>
+        <input type="password" placeholder="Enter PIN" id="pin" />
+        <button class="btn" onclick="login()">Login</button>
+      </div>
+
+      <div id="dashboard" style="display: none">
+        <h2>Welcome!</h2>
+        <p>Balance: $<span id="balance">100</span></p>
+        <button class="btn" onclick="withdraw()">Withdraw</button>
+        <button class="btn" onclick="deposit()">Deposit</button>
+        <button class="btn logout" onclick="logout()">Log out</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
